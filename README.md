@@ -48,8 +48,6 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
 
-> Ajusta `piliteje_db`, usuario y contraseña según tu entorno.
-
 ### 2.3. Puerto y contexto
 
 El backend expone la API en:
@@ -123,13 +121,6 @@ android {
 ```
 
 * `10.0.2.2` es la IP especial para que el **emulador Android** acceda a tu `localhost`.
-
-  
-### 3.3. URL base para entorno de producción (opcional)
-
-Si despliegas el backend en Railway/Render/etc., puedes:
-
-* Cambiar la `BASE_URL` en `build.gradle`, **o**
 
 ### 3.4. Dependencias clave
 
@@ -223,8 +214,6 @@ Estos usuarios se crean llamando a `/auth/register` (ver JSON más abajo) o deja
 * **Password**: `Cliente123*`
 * **Rol**: `CLIENTE`
 
-> Importante: ajusta estos valores si tu entidad de usuario usa otros campos (`username`, `rut`, etc.) y actualiza también el código de login de Android.
-
 ---
 
 ## 6. Almacenamiento de imágenes
@@ -245,9 +234,6 @@ Las imágenes de productos se manejan así:
 ```text
 http://10.0.2.2:8080/api/uploads/<nombre-archivo>.jpg
 ```
-
-> En producción, documenta en el README del backend dónde se encuentra esa carpeta en el servidor (ej: `/var/www/piliteje/uploads`).
-
 ---
 
 ## 7. Flujo de prueba recomendado (para el video)
