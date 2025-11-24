@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Tema principal de la app -->
+    <style name="Theme.PilitejeMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores y cosas básicas -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+
+    <!-- (Opcional) Tema splash, PERO igual heredando de MaterialComponents/AppCompat -->
+    <style name="Theme.PilitejeMobile.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

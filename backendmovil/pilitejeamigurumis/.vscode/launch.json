@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PilitejeAmigurumisApplication<pilitejeamigurumis>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pilitejeamigurumis.PilitejeAmigurumisApplication",
+            "projectName": "pilitejeamigurumis",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
