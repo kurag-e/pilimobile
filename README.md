@@ -123,14 +123,13 @@ android {
 ```
 
 * `10.0.2.2` es la IP especial para que el **emulador Android** acceda a tu `localhost`.
-* Si levantas el backend en otra máquina / cloud, cambia esta URL (ej: `"https://piliteje-backend.onrender.com/api/"`).
 
+  
 ### 3.3. URL base para entorno de producción (opcional)
 
 Si despliegas el backend en Railway/Render/etc., puedes:
 
 * Cambiar la `BASE_URL` en `build.gradle`, **o**
-* Leerla desde `local.properties` usando otra `buildConfigField` (explicado en el README si lo implementas).
 
 ### 3.4. Dependencias clave
 
@@ -307,3 +306,38 @@ Esa APK es la que se entrega junto al video demo.
 
   * `spring.datasource.url`, `spring.datasource.username`, `spring.datasource.password`
   * `server.port`, `server.servlet.context-path`
+
+---
+
+## 10. JSON de registro de usuarios de prueba utilizado
+
+```http
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+```
+
+### 10.1. Admin demo
+
+```json
+{
+  "nombre": "Admin Demo",
+  "email": "admin@piliteje.cl",
+  "password": "Admin123*",
+  "rol": "ADMIN",
+  "telefono": "+56911111111",
+  "direccion": "Casa matriz Piliteje"
+}
+```
+
+### 10.2. Cliente demo
+
+```json
+{
+  "nombre": "Cliente Demo",
+  "email": "cliente@piliteje.cl",
+  "password": "Cliente123*",
+  "rol": "CLIENTE",
+  "telefono": "+56922222222",
+  "direccion": "Calle Falsa 123"
+}
+```
